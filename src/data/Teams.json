@@ -1,0 +1,20 @@
+[
+     {
+          "id": 1,
+          "name": "Martha Martin",
+          "position": "Executive Chief",
+          "image": "/images/ForAbout/teams1.jpg"
+     },
+     {
+          "id": 2,
+          "name": "Robort Dan",
+          "position": "Group Head Chief",
+          "image": "/images/ForAbout/teams2.jpg"
+     },
+     {
+          "id": 3,
+          "name": "Raphael Moss",
+          "position": "Executive Head Chief",
+          "image": "/images/ForAbout/teams3.jpg"
+     }
+]

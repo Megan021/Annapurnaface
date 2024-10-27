@@ -1,0 +1,38 @@
+[
+     {
+          "id": 1,
+          "name": "Twin Home",
+          "image": "/images/ForRoom/room1.jpg",
+          "price": "$59"
+     },
+     {
+          "id": 2,
+          "name": "Double-double",
+          "image": "/images/ForRoom/room2.jpg",
+          "price": "$59"
+     },
+     {
+          "id": 3,
+          "name": "Mini Suite",
+          "image": "/images/ForRoom/room5.jpg",
+          "price": "$59"
+     },
+     {
+          "id": 4,
+          "name": "Regular Suite",
+          "image": "/images/ForRoom/room4.jpg",
+          "price": "$59"
+     },
+     {
+          "id": 5,
+          "name": "Presidential Suite",
+          "image": "/images/ForRoom/room3.jpg",
+          "price": "$59"
+     },
+     {
+          "id": 6,
+          "name": "Delux Suite",
+          "image": "/images/ForRoom/room6.jpg",
+          "price": "$59"
+     }
+]

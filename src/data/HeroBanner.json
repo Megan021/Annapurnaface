@@ -1,0 +1,20 @@
+[
+     {
+          "id": 1,
+          "Title": "Welcome to Annapurnaface",
+          "Title2": "Resturant & Bar",
+          "image": "/images/ForLanding/bannerbg.jpg" 
+     },
+     {
+          "id": 2,
+          "Title": "Kathmandu's Oldest",
+          "Title2": "Wine & Bars",
+          "image": "/images/ForLanding/bannerbg3.jpg" 
+     },
+     {
+          "id": 3,
+          "Title": "Welcome to Our Resturant",
+          "Title2": "Resturant & Bar",
+          "image": "/images/ForLanding/bannerbg2.jpg" 
+     }
+]
