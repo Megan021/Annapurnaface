@@ -16,7 +16,7 @@ const Room = () => {
               <div className='relative'>
                 <img src={room?.image} alt="room" className='h-[50vh] object-cover rounded' />
                 <div className='absolute bottom-4 left-4'>
-                  <button className='uppercase p-3 px-7 text-[17px] backdrop-blur-md text-white'>from {room?.price}</button>
+                  <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'>from {room?.price}</button>
                 </div>
               </div>
               <div className='mt-6'>

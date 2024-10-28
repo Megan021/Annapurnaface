@@ -49,7 +49,7 @@ const RoomAndSuits = () => {
                               <div className='relative'>
                                    <img src={room?.image} alt="room" className='h-[50vh] object-cover rounded' />
                                    <div className='absolute bottom-4 left-4'>
-                                   <button className='uppercase p-3 px-7 text-[17px] backdrop-blur-md text-white'>from {room?.price}</button>
+                                   <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'>from {room?.price}</button>
                                    </div>
                               </div>
                               <div className='mt-6'>
@@ -66,8 +66,8 @@ const RoomAndSuits = () => {
                </Swiper>
 
                <div className='flex gap-3 pt-12 justify-center text-4xl'>
-                    <button onClick={() => swiperRef.current.swiper.slidePrev()}><MdKeyboardArrowLeft className='rounded-full border border-black p-2' /></button>
-                    <button onClick={() => swiperRef.current.swiper.slideNext()}><MdKeyboardArrowRight className='rounded-full border border-black p-2' /></button>
+                    <button onClick={() => swiperRef.current.swiper.slidePrev()}><MdKeyboardArrowLeft className='rounded-full text-[#C19D60] border border-[#C19D60] p-2' /></button>
+                    <button onClick={() => swiperRef.current.swiper.slideNext()}><MdKeyboardArrowRight className='rounded-full text-[#C19D60] border border-[#C19D60] p-2' /></button>
                </div>
           </div>
      </div>

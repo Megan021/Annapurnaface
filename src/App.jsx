@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import ScrollOnTop from "./components/ScrollOnTop";
 import ScrollToTop from "./components/ScrollToTop";
 import Gallery from "./pages/Gallery";
+import ReservationPage from "./pages/ReservationPage";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/reservation" element={<ReservationPage />} />
         </Routes>
         <Footer />
         <ScrollOnTop />

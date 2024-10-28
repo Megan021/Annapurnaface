@@ -1,6 +1,7 @@
 import React from "react";
 import MenuBanner from "../components/ForMenu/MenuBanner";
 import MenuItem from "../data/Menu.json";
+import Reservation from "../components/Reservation";
 
 const Menu = () => {
   return (
@@ -105,6 +106,7 @@ const Menu = () => {
           </div>
         </div>
       </div>
+      <Reservation />
     </>
   );
 };
