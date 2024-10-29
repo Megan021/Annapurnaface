@@ -21,7 +21,7 @@ const RoomAndSuits = () => {
           <i><BsBuildings className='w-7 mx-auto text-[#C19D60] text-2xl' /></i>
           </div>
 
-          <div className='container w-[74%] mx-auto pb-20'>
+          <div className='container md:w-[74%] mx-auto pb-20 px-4 md:px-0'>
                <Swiper
                     ref={swiperRef} // Attach the ref to Swiper
                     modules={[Navigation, Pagination]}
@@ -30,7 +30,7 @@ const RoomAndSuits = () => {
                     slidesPerView={3} // Adjust this number based on the number of visible slides
                     breakpoints={{
                          // Adjust the number of slides for different screen sizes
-                         640: {
+                         390: {
                               slidesPerView: 1,
                               spaceBetween: 10,
                          },
@@ -47,9 +47,9 @@ const RoomAndSuits = () => {
                     {Room.map((room, index) => (
                          <SwiperSlide key={index}>
                               <div className='relative'>
-                                   <img src={room?.image} alt="room" className='h-[50vh] object-cover rounded' />
+                                   <img src={room?.image} alt="room" className='aspect-[2/2] object-cover rounded' />
                                    <div className='absolute bottom-4 left-4'>
-                                   <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'>from {room?.price}</button>
+                                   <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'><span className='text-base'>from</span> {room?.price}</button>
                                    </div>
                               </div>
                               <div className='mt-6'>

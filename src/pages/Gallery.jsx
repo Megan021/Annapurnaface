@@ -16,7 +16,7 @@ const Gallery = () => {
   return (
     <>
       <GalleryBanner />
-      <div className="grid grid-cols-3 gap-6 gap-y-8 w-[74%] mx-auto py-20">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 gap-y-8 md:w-[74%] px-4 md:px-0 mx-auto py-20">
         {images.map((item, index) => (
           <Zoom>
             <div key={index} className="">

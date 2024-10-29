@@ -8,15 +8,17 @@ const Menu = () => {
     <>
       <MenuBanner />
       <div className="bg-[#1B1B1B]">
-        <div className="w-[74%] mx-auto py-20 text-white">
-          <div className="flex items-center">
+        <div className="lg:w-[74%] mx-auto py-20 text-white">
+          <div className="md:flex items-center">
             <div className="flex-1">
-              <img src="/images/ForMenu/maindish.jpg" alt="main dish" />
+              <img src="/images/ForMenu/maindish.jpg" className="hidden md:block h-full" alt="main dish" />
             </div>
             <div className="flex-1">
+               <div className="px-8 -mt-4 pb-3">
+               <h2 className="font-Libre text-2xl tracking-wider text-[#C19D60]">Main Dish</h2>
+               </div>
               <div className="p-8 flex flex-col gap-4 h-[50vh] overflow-y-scroll custom-scrollbar mr-5">
                 
-                {/* Corrected map function */}
                 {MenuItem.categories.dishes.map((item, index) => (
                   <div key={index} className="flex justify-between items-center">
                     <div className="flex gap-5 items-center">
@@ -42,8 +44,11 @@ const Menu = () => {
           </div>
 
           {/* Sections for desserts and wines */}
-          <div className="flex items-center">
+          <div className="md:flex items-center">
             <div className="flex-1">
+            <div className="px-8 mt-12 md:-mt-4 pb-3">
+               <h2 className="font-Libre text-2xl tracking-wider text-[#C19D60]">Desserts</h2>
+               </div>
             <div className="p-8 flex flex-col gap-4 h-[50vh] overflow-y-scroll custom-scrollbar mr-5">
                 
                 {/* Corrected map function */}
@@ -70,14 +75,18 @@ const Menu = () => {
               </div>
             </div>
             <div className="flex-1">
-              <img src="/images/ForMenu/dessert.jpg" alt="dessert" />
+              <img src="/images/ForMenu/dessert.jpg" className="hidden md:block h-full" alt="dessert" />
             </div>
           </div>
-          <div className="flex items-center">
+
+          <div className="md:flex items-center">
             <div className="flex-1">
-              <img src="/images/ForMenu/wine.jpg" alt="wine" />
+              <img src="/images/ForMenu/wine.jpg" className="hidden md:block h-full" alt="wine" />
             </div>
             <div className="flex-1">
+            <div className="px-8 mt-12 md:-mt-4 pb-3">
+               <h2 className="font-Libre text-2xl tracking-wider text-[#C19D60]">Wines</h2>
+               </div>
             <div className="p-8 flex flex-col gap-4 h-[50vh] overflow-y-scroll custom-scrollbar mr-5">
                 
                 {/* Corrected map function */}

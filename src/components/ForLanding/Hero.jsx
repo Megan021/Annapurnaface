@@ -4,7 +4,7 @@ import { Pagination,  Autoplay, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/pagination';
-import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowUp, MdKeyboardArrowDown, MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import HeroBanner from "../../data/HeroBanner.json";
 
 const Hero = () => {
@@ -37,13 +37,13 @@ const Hero = () => {
             <div className='h-[100vh] bg-cover relative' style={{ backgroundImage: `url(${item?.image})` }}>
               <div className="w-full h-[100vh] bg-black opacity-70 absolute"></div>
               <div className="flex justify-between items-center h-full text-center w-[95%] mx-auto">
-                <div className="[writing-mode:vertical-lr] text-white z-10 font-Libre">
+                <div className="hidden md:block [writing-mode:vertical-lr] text-white z-10 font-Libre">
                   <h2 className="uppercase text-[#C19D60] text-lg font-light tracking-[0.4rem]">Reservation</h2>
                   <p className="text-3xl font-light">980-1234567</p>
                 </div>
-                <div className="text-white z-20 leading-[4rem] mr-16">
+                <div className="text-white z-20 leading-[4rem] px-4 md:mr-16">
                   <h3 className="uppercase text-sm font-Libre mb-5">est. 1995</h3>
-                  <h2 className="font-Libre text-6xl">{item?.Title}</h2>
+                  <h2 className="font-Libre text-5xl md:text-6xl">{item?.Title}</h2>
                   <h3 className="text-[#C19D60] text-4xl font-Libre mt-4">
                     {item?.Title2}
                   </h3>
@@ -59,10 +59,11 @@ const Hero = () => {
         ))}
       </Swiper>
 
-      <div className="absolute top-[44%] right-12 text-3xl text-[#C19D60] z-20 flex flex-col gap-3">
+      <div className="hidden absolute top-[44%] right-12 text-3xl text-[#C19D60] z-20 md:flex flex-col gap-3">
         <button onClick={() => swiperRef.current.slidePrev()}><MdKeyboardArrowUp className="" /></button>
         <button onClick={() => swiperRef.current.slideNext()}><MdKeyboardArrowDown className="" /></button>
       </div>
+
     </div>
   );
 };

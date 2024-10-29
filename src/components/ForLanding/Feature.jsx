@@ -6,7 +6,7 @@ import { BiSupport } from "react-icons/bi";
 const Feature = () => {
   return (
     <>
-      <div className="bg-[#1B1B1B] text-center h-[80vh] text-white mb-[20rem]">
+      <div className="bg-[#1B1B1B] text-center lg:h-[80vh] text-white lg:mb-[20rem]">
         <div className="py-24">
           <h3 className="uppercase -tracking-tighter text-[#C19D60] text-sm">
             Firs-class
@@ -19,9 +19,9 @@ const Feature = () => {
           />
         </div>
 
-        <div className="container w-[74%] mx-auto flex gap-5 pb-24">
-          <div className='h-[65vh] bg-[url("/images/ForFeature/wifi2.avif")] bg-center bg-cover w-full relative'>
-            <div className="h-[65vh] bg-[url('/images/ForFeature/wifi2.avif')] bg-center bg-cover w-full relative group">
+        <div className="container md:w-[74%] px-4 md:px-0 mx-auto grid lg:grid-cols-4 md:grid-cols-2  gap-6 pb-24">
+          <div className='h-[50vh] md:h-[40vh] lg:h-[65vh] bg-[url("/images/ForFeature/wifi2.avif")] bg-center bg-cover w-full relative'>
+            <div className="h-[50vh] md:h-[40vh] lg:h-[65vh] bg-[url('/images/ForFeature/wifi2.avif')] bg-center bg-cover w-full relative group">
               <div className="bg-black h-full bg-opacity-40">
                 <div className="flex flex-col justify-end h-full pb-8">
                   <i>
@@ -40,8 +40,8 @@ const Feature = () => {
               </div>
             </div>
           </div>
-          <div className='h-[65vh] bg-[url("/images/ForFeature/firecamp.webp")] bg-cover w-full relative group'>
-            <div className="bg-black h-[65vh] bg-opacity-30">
+          <div className='h-[50vh] md:h-[40vh] lg:h-[65vh] bg-[url("/images/ForFeature/firecamp.webp")] bg-cover w-full relative group'>
+            <div className="bg-black h-[50vh] md:h-[40vh] lg:h-[65vh] bg-opacity-30">
               <div className="flex flex-col justify-end h-full pb-8">
                 <i className="">
                   <GiCampfire className="w-full text-5xl text-[#C19D60] mx-auto mb-2" />
@@ -57,8 +57,8 @@ const Feature = () => {
                 </div>
             </div>
           </div>
-          <div className='h-[65vh] bg-[url("/images/ForFeature/support.png")] bg-cover w-full bg-left relative group'>
-            <div className="bg-black h-[65vh] bg-opacity-40">
+          <div className='h-[50vh] md:h-[40vh] lg:h-[65vh] bg-[url("/images/ForFeature/support.png")] bg-cover w-full bg-left relative group'>
+            <div className="bg-black h-[50vh] md:h-[40vh] lg:h-[65vh] bg-opacity-40">
               <div className="flex flex-col justify-end h-full pb-8">
                 <i className="">
                   <BiSupport className="w-full text-5xl text-[#C19D60] mx-auto mb-2" />
@@ -74,8 +74,8 @@ const Feature = () => {
                 </div>
             </div>
           </div>
-          <div className='h-[65vh] bg-[url("/images/ForFeature/parking2.jpg")] bg-cover bg-center w-full relative group'>
-            <div className="bg-black h-[65vh] bg-opacity-30">
+          <div className='md:h-[40vh] h-[50vh] lg:h-[65vh] bg-[url("/images/ForFeature/parking2.jpg")] bg-cover bg-center w-full relative group'>
+            <div className="bg-black md:h-[40vh] h-[50vh] lg:h-[65vh] bg-opacity-30">
               <div className="flex flex-col justify-end h-full pb-8">
                 <img
                   src="/images/car-parking.png"

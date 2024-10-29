@@ -16,9 +16,9 @@ const Reservation = () => {
      </div> */}
 
      <div className='bg-[url("/images/ForReservation/bg.jpg")] text-center text-white bg-cover bg-bottom bg-fixed'>
-          <div className='py-32 bg-black bg-opacity-50'>
+          <div className='py-16 md:py-32 bg-black bg-opacity-50'>
           <h3 className='uppercase text-sm text-[#C19D60]'>Make Reservation</h3>
-          <h2 className='font-Libre text-4xl tracking-[0.1rem] capitalize w-[50%] mx-auto py-3 pb-6'>Book online today and look forward to a relaxing stay with us</h2> <hr className='w-[6%] mx-auto border border-[#C19D60]' />
+          <h2 className='font-Libre text-xl md:text-4xl tracking-[0.1rem] capitalize md:w-[80%] lg:w-[50%] px-4 md:px-0 mx-auto py-3 pb-6'>Book online today and look forward to a relaxing stay with us</h2> <hr className='w-[20%] md:w-[6%] mx-auto border border-[#C19D60]' />
           <button className='mt-12 border border-[#C19D60] text-white p-3 uppercase text-sm px-6 font-light tracking-wider'>Book Now</button>
           </div>
      </div>

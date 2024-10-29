@@ -6,9 +6,9 @@ import { BiSupport } from "react-icons/bi";
 const Service = () => {
   return (
     <>
-          <div className='flex gap-12 py-16 pb-24 w-[74%] mx-auto items-center'>
+          <div className='flex flex-col-reverse lg:flex-row gap-12 py-14 pt-20 lg:pt-16 lg:py-16 lg:pb-24 md:w-[74%] px-4 md:px-0 mx-auto items-center'>
           <div className='flex-1'>
-               <div className='flex items-center gap-5'>
+               <div className='hidden lg:flex items-center gap-5'>
                <div><img src="/images/ForAbout/service1.jpg" alt="" className='w-[45rem]' /></div>
                <div><img src="/images/ForAbout/service2.jpg" alt="" className='w-[50rem]' /></div>
                </div>
@@ -16,7 +16,7 @@ const Service = () => {
           <div className='flex-1'>
                <h3 className='text-[#C19D60] uppercase text-sm'>Discover the Services we offered</h3>
                <h2 className='text-5xl font-Libre capitalize tracking-[0.2rem] py-6 pb-12'>The Service</h2>
-               <div className='grid grid-cols-2 gap-7'>
+               <div className='grid md:grid-cols-2 gap-7'>
                     <div className='flex gap-4'>
                          <div><i><HiOutlineWifi className='text-4xl text-[#C19D60]' /></i></div>
                          <div>

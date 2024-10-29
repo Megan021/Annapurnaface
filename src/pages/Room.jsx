@@ -9,14 +9,14 @@ const Room = () => {
   return (
     <div className='bg-[#F2EEE8]'>
       <Banner />
-      <div className='container w-[74%] py-20 mx-auto grid grid-cols-3 gap-7 gap-y-20'>
+      <div className='container md:w-[74%] px-4 md:px-0 py-20 mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20'>
         {Rooms.map((room, index) => {
           return ( // Added return here
             <div key={index}>
               <div className='relative'>
-                <img src={room?.image} alt="room" className='h-[50vh] object-cover rounded' />
+                <img src={room?.image} alt="room" className='aspect-[2/2] object-cover rounded' />
                 <div className='absolute bottom-4 left-4'>
-                  <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'>from {room?.price}</button>
+                  <button className='uppercase p-3 px-7 text-xl backdrop-blur-md text-white'><span className='text-base'>from</span> {room?.price}</button>
                 </div>
               </div>
               <div className='mt-6'>
